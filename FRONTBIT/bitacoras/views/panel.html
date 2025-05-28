@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácoras SENA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../public/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-top">
+        <div class="logo">
+            <img src="../public/img/sena-logo.png" alt="SENA Logo">
+        </div>
+        <div class="text-section">
+            <h1>Centro de la Innovación</h1>
+            <p>La Agroindustria y la Aviación<br>Regional Antioquia</p>
+        </div>
+        <div class="adso">
+            <h2>{ADSO}</h2>
+            <p>Análisis y Desarrollo de Software</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sena-info"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#crear-bitacora"><i class="bi bi-journal-text"></i> Crear Bitácora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ver-bitacoras"><i class="bi bi-journal-plus"></i> Ver Bitácora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-primary">Bienvenido a la Bitácora</h2>
+        <p>Desde aquí podrás crear nuevas bitácoras o revisar las ya registradas por los aprendices.</p>
+        <div class="mt-5" id="sena-info">
+            <div class="border rounded p-4 bg-light mt-3 shadow-sm">
+                <p>
+                    Una <strong>bitácora del SENA</strong> es una herramienta utilizada por los aprendices para 
+                    <strong>registrar, organizar y hacer seguimiento</strong> a sus actividades de formación durante un proceso académico o práctico. 
+                    Permite evidenciar el aprendizaje, las tareas realizadas, los logros obtenidos y las dificultades enfrentadas. 
+                </p>
+                <p>
+                    Sirve como una guía para el instructor y como respaldo para el aprendiz, ayudando a <strong>mejorar la planificación, el control y la evaluación</strong> del proceso formativo.
+                    Además, es un requisito fundamental para muchos programas de formación en el <strong>SENA</strong>.
+                </p>
+            </div>
+        </div>
+    
+        <div id="carouselBitacora" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="../public/img/certificados-sena-1024x555.jpg" class="d-block w-100" alt="Actividad 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/img/formacion_virtual_14052021.jpeg" class="d-block w-100" alt="Actividad 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/img/salaPrensa.jpg" class="d-block w-100" alt="Actividad 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBitacora" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBitacora" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6" id="crear-bitacora">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-journal-plus"></i> Crear Bitácora</h5>
+                        <p class="card-text">Llena el formulario para registrar una nueva bitácora.</p>
+                        <a href="bitacora.html" class="btn btn-primary">Crear</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="ver-bitacoras">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-journal-text"></i> Ver Bitácoras</h5>
+                        <p class="card-text">Consulta y edita las bitácoras previamente creadas.</p>
+                        <a href="vistabit.html" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../public/img/sena-logo.png" alt="Logo SENA" class="footer-logo">
+            <div class="footer-text">
+                <p>© 2025 Servicio Nacional De Aprendizaje SENA | Todos los derechos reservados.</p>
+                <p>Ver Equipo de Desarrollo, Programa Análisis y Desarrollo de Software | Versión 1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
