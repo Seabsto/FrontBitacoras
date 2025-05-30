@@ -19,11 +19,13 @@ body {
 .sidebar a.btn-outline-light {
   color: #FFB400;
   border-color: #FFB400;
+
 }
 
 .sidebar a.btn-outline-light:hover {
   background-color: #FFB400;
   color: #00324D;
+  
 }
 
 .main-content {
@@ -258,4 +260,40 @@ h2.text-success {
 .carousel-inner img {
     height: 350px;
     object-fit: cover;
+}
+
+.Text1{
+    margin-top: 70px;
+}
+
+.Conocimiento{
+    width: 230px;
+    height: 200px;
+    margin-top: 20px;
+     border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.Conocimiento:hover {
+  transform: scale(1.05);
+}
+
+
+.custom-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* semi-bold */
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
 }
