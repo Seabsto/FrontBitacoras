@@ -154,10 +154,11 @@ body {
     color: #666;
 }
 
-.adso {
-    display: flex;
-    align-items: center;
+.adso img {
+    height: 105px; /* o prueba con 50px si quieres aún más pequeño */
+    width: auto;
 }
+
 
 .adso h2 {
     margin: 0;
@@ -259,7 +260,9 @@ h2.text-success {
 
 .carousel-inner img {
     height: 350px;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
+    background-color: #ffffff; /* opcional, para rellenar bordes si hay espacio vacío */
 }
 
 .Text1{
@@ -296,4 +299,12 @@ h2.text-success {
   color: white;
   text-align: center;
   margin-top: 1rem;
+}
+
+.carousel-control-next-icon{
+  background-color: #000;
+}
+
+.carousel-control-prev-icon{
+  background-color: #000;
 }
