@@ -9,32 +9,30 @@
  
 </head>
 <body>
-  <header class="header-sena d-flex align-items-center px-3">
-    <img src="../public/img/sena-logo.png" alt="Logo SENA" class="logo-sena">
-    <h1 class="ms-3">Registro de Bitácora</h1>
-  </header>
+
+  <div class="header-sena d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <img src="../public/img/sena-logo.png" alt="SENA Logo">
+    </div>
+    <div class="text-section-black text-center flex-grow-1">
+      <h1 class="mb-0">Registro de Bitácoras</h1>
+    </div>
+    <div class="adso">
+      <img src="../public/img/ADSO1.png" alt="Adso" style="height: 120px; width: auto;">
+    </div>
+  </div>
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 sidebar custom-sidebar">
-  <div class="d-flex flex-column align-items-start p-3">
-    <a href="panel.html" class="btn btn-menu mb-3 d-flex align-items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-        class="bi bi-arrow-left-circle me-2" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-        <path fill-rule="evenodd"
-          d="M8.354 11.354a.5.5 0 0 1-.708 0L4.5 8.207l-.354-.354.354-.353 3.146-3.147a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 0 1H5.707l2.647 2.646a.5.5 0 0 1 0 .708z" />
-      </svg>
-      Menú
-    </a>
-    <div class="info-box">
-     <h4 class="custom-title">Creando tu futuro con conocimiento</h4>
-     <img class="Conocimiento" src="../public/img/Conocimiento.jpg" alt="">
-     </div>
-  </div>
-</div>
-
+      <div class="col-md-3 sidebar">
+        <h5>Menú</h5>
+        <a href="panel.html" class="btn btn-outline-light mb-3">← Volver al Menú</a>
+        <br>
+        <div class="info-box">
+          <h4>Creando tu futuro con conocimiento</h4>
+          <img class="Conocimiento" src="../public/img/Conocimiento.jpg" alt="">
+        </div>
+      </div>
 
       <div class="col-md-9 main-content">
         <form id="bitacoraForm">
@@ -166,9 +164,14 @@
     </div>
   </div>
 
-  <footer class="footer-sena d-flex justify-content-center align-items-center mt-5">
-    <img src="../public/img/sena-logo.png" alt="Logo SENA" class="logo-sena-footer">
-    <span>© 2024 Servicio Nacional de Aprendizaje SENA - Todos los derechos reservados</span>
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="../public/img/sena-logo.png" alt="Logo SENA" class="footer-logo">
+        <div class="footer-text">
+            <p>© 2025 Servicio Nacional De Aprendizaje SENA | Todos los derechos reservados.</p>
+            <p>Ver Equipo de Desarrollo, Programa Análisis y Desarrollo de Software | Versión 1.0</p>
+        </div>
+    </div>
   </footer>
 </body>
 </html>
