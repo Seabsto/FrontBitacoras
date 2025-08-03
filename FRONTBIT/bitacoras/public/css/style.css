@@ -19,11 +19,13 @@ body {
 .sidebar a.btn-outline-light {
   color: #FFB400;
   border-color: #FFB400;
+
 }
 
 .sidebar a.btn-outline-light:hover {
   background-color: #FFB400;
   color: #00324D;
+  
 }
 
 .main-content {
@@ -57,7 +59,7 @@ body {
 .header-sena {
   background-color: #00324D;
   color: white;
-  height: 70px;
+  padding: 1px 20px
 }
 
 .logo-sena {
@@ -140,6 +142,16 @@ body {
     flex-grow: 1;
 }
 
+.text-section-black {
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.text-section-black h1 {
+  font-size: 30px; /* Ajusta el tamaño según necesites */
+}
+
 .text-section h1 {
     margin: 0;
     font-size: 24px;
@@ -152,10 +164,11 @@ body {
     color: #666;
 }
 
-.adso {
-    display: flex;
-    align-items: center;
+.adso img {
+    height: 105px; /* o prueba con 50px si quieres aún más pequeño */
+    width: auto;
 }
+
 
 .adso h2 {
     margin: 0;
@@ -219,30 +232,32 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #0d3b5a;
+    background-color: #00324D;
     color: #FFFFFF;
     padding: 20px 0;
     margin-top: auto;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 20px;
+.footer-content{
+  position: relative;          
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;                
 }
 
-.footer-logo {
-    height: 80px;
-    margin-right: 180px;
+.footer-logo{
+  height: 70px;
 }
 
-.footer-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer-text{
+  position: absolute;        
+  left: 50%;                   
+  transform: translateX(-50%); 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-text p {
@@ -257,5 +272,51 @@ h2.text-success {
 
 .carousel-inner img {
     height: 350px;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
+    background-color: #ffffff; /* opcional, para rellenar bordes si hay espacio vacío */
+}
+
+.Text1{
+    margin-top: 70px;
+}
+
+.Conocimiento{
+    width: 230px;
+    height: 200px;
+    margin-top: 20px;
+     border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.Conocimiento:hover {
+  transform: scale(1.05);
+}
+
+
+.custom-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* semi-bold */
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-control-next-icon{
+  background-color: #000;
+}
+
+.carousel-control-prev-icon{
+  background-color: #000;
 }

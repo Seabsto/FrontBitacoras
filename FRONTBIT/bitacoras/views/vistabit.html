@@ -8,16 +8,29 @@
 </head>
 
 <body>
-    <header class="header-sena d-flex align-items-center px-3">
-    <img src="../public/img/sena-logo.png" alt="Logo SENA" class="logo-sena">
-    <h1 class="ms-3">Bitácoras</h1>
-    </header>
+    <div class="header-sena d-flex align-items-center justify-content-between px-3">
+        <div class="logo">
+            <img src="../public/img/sena-logo.png" alt="SENA Logo">
+        </div>
+        <div class="text-section-black text-center flex-grow-1">
+            <h1 class="mb-0">Bitácoras</h1>
+        </div>
+        <div class="adso">
+            <img src="../public/img/ADSO1.png" alt="Adso" style="height: 120px; width: auto;">
+        </div>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 sidebar">
                 <h5>Menú</h5>
-                <a href="panel.html" class="btn btn-outline-light w-100 mb-3">← Volver al Menú</a>
+                <a href="panel.html" class="btn btn-outline-light mb-3">← Volver al Menú</a>
+                <br>
+
+                <label for="programa">Programa</label>
+                <select id="programa" class="form-select">
+                <option value="">Seleccione programa</option>
+                </select>
 
                 <label for="ficha">Ficha</label>
                 <select id="ficha" class="form-select">
@@ -32,11 +45,6 @@
                 <option value="">Seleccione instructor</option>
                 </select>
 
-                <label for="programa">Programa</label>
-                <select id="programa" class="form-select">
-                <option value="">Seleccione programa</option>
-                </select>
-
                 <button class="btn btn-sena mt-3">Aplicar Filtros</button>
             </div>
 
@@ -44,27 +52,129 @@
                 <h2 class="mb-3">Bitácoras Creadas</h2>
                 
                 <div class="bitacora-pdf">
-                <h5>Bitácora 01 - Ficha 245678</h5>
-                <p><strong>Fecha:</strong> 2025-05-15</p>
-                <p><strong>Instructor:</strong> Juan Pérez</p>
-                <p><strong>Programa:</strong> ADSO</p>
-                <p>Resumen de actividades...</p>
+                    <h5>Bitácora 01</h5>
+                    <p><strong>Fecha:</strong> 2025-05-15</p>
+                    <p><strong>Programa:</strong> ADSO</p>
+                    <p><strong>Ficha:</strong> 245678</p>
+                    <p><strong>Instructor:</strong> Juan Pérez</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bitacoraModal1">
+                        Información de Bitácora
+                    </button>
                 </div>
 
                 <div class="bitacora-pdf">
-                <h5>Bitácora 02 - Ficha 245678</h5>
-                <p><strong>Fecha:</strong> 2025-05-10</p>
-                <p><strong>Instructor:</strong> Laura Gómez</p>
-                <p><strong>Programa:</strong> ADI</p>
-                <p>Resumen de actividades...</p>
+                    <h5>Bitácora 02</h5>
+                    <p><strong>Fecha:</strong> 2025-05-10</p>
+                    <p><strong>Programa:</strong> ADI</p>
+                    <p><strong>Ficha:</strong> 245678</p>
+                    <p><strong>Instructor:</strong> Laura Gómez</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bitacoraModal2">
+                        Información de Bitácora
+                    </button>
                 </div>
             </div>
         </div>
   </div>
-
-  <footer class="footer-sena d-flex justify-content-center align-items-center">
-  <img src="../public/img/sena-logo.png" alt="Logo SENA" class="logo-sena-footer">
-  <span>© 2024 Servicio Nacional de Aprendizaje SENA - Todos los derechos reservados</span>
+  
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="../public/img/sena-logo.png" alt="Logo SENA" class="footer-logo">
+        <div class="footer-text">
+            <p>© 2025 Servicio Nacional De Aprendizaje SENA | Todos los derechos reservados.</p>
+            <p>Ver Equipo de Desarrollo, Programa Análisis y Desarrollo de Software | Versión 1.0</p>
+        </div>
+    </div>
   </footer>
+
+    <!-- Modal Bitácora 1 -->
+    <div class="modal fade" id="bitacoraModal1" tabindex="-1" aria-labelledby="bitacoraModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="bitacoraModal1Label">Bitácora - 15/05/2025</h5>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Programa:</strong></label>
+                    <p>ADSO</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Ficha:</strong></label>
+                    <p>245678</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Instructor:</strong></label>
+                    <p>Juan Pérez</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Descripción de Actividades:</strong></label>
+                    <p>Durante la jornada se desarrolló el componente de análisis de requerimientos. Los aprendices realizaron actividades prácticas en JavaScript y documentaron los casos de uso del sistema.</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Compromisos:</strong></label>
+                    <p>Completar los ejercicios de funciones JS y preparar el prototipo para la siguiente clase.</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Inasistencias:</strong></label>
+                    <p>Camila Rodríguez</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Observaciones del Instructor:</strong></label>
+                    <p>Buen rendimiento general. Se sugiere mejorar la puntualidad al iniciar la jornada.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bitacoraModal2" tabindex="-1" aria-labelledby="bitacoraModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="bitacoraModal1Label">Bitácora - 2025-05-10</h5>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Programa:</strong></label>
+                    <p>ADI</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Ficha:</strong></label>
+                    <p>245678</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Instructor:</strong></label>
+                    <p>Laura Gómez</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Descripción de Actividades:</strong></label>
+                    <p>Durante la jornada se desarrolló el componente de análisis de requerimientos. Los aprendices realizaron actividades prácticas en JavaScript y documentaron los casos de uso del sistema.</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Compromisos:</strong></label>
+                    <p>Completar los ejercicios de funciones JS y preparar el prototipo para la siguiente clase.</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Inasistencias:</strong></label>
+                    <p>Camila Rodríguez</p>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label"><strong>Observaciones del Instructor:</strong></label>
+                    <p>Buen rendimiento general. Se sugiere mejorar la puntualidad al iniciar la jornada.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
